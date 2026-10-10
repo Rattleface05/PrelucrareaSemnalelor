@@ -4,7 +4,7 @@ from math import sqrt
 
 import scipy.io.wavfile
 import scipy.signal
-import sounddevice
+import sounddevice as sd
 
 # Frecventa de esantionare mentionata in ghid
 fs = 44100
