@@ -1,13 +1,6 @@
 import matplotlib.pyplot as plt 
 import numpy as np
 
-import scipy.io.wavfile
-import scipy.signal
-import sounddevice as sd
-
-# Frecventa de esantionare mentionata in ghid
-fs = 44100
-
 def signal(x):
     return  np.sin(2 * np.pi * 3 * x)
 

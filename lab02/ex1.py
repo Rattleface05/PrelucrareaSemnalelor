@@ -1,12 +1,6 @@
 import matplotlib.pyplot as plt 
 import numpy as np
 
-import scipy.io.wavfile
-import scipy.signal
-import sounddevice as sd
-
-# Frecventa de esantionare mentionata in ghid
-fs = 44100
 
 # Ex 1 
 def sinusul(t):
