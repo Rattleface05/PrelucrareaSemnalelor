@@ -15,7 +15,7 @@ def signal_100(x):
 def signal_117(x): 
     return np.sin(2 * np.pi * 117 * x)
 
-t = np.linspace(0,4,44100)
+t = np.linspace(0,4,fs)
 
 
 symphony = np.append(signal_100(t), signal_117(t))
