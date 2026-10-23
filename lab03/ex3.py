@@ -26,7 +26,7 @@ fig.set_figwidth(10)
 
 ax1.plot(t,signal(t))
 ax1.set_xlabel("Timp (s)")
-ax1.set_ylabel("|X(ω)|")
+ax1.set_ylabel("Amplitudine")
 
 ax2.stem(W,np.abs(ft(W, signal)))
 ax2.set_xlabel("Frecveta (Hz)")
