@@ -18,6 +18,9 @@ t = np.linspace(0,4,fs)
 
 symphony = np.append(signal_100(t), signal_117(t))
 
+sd.play(symphony)
+sd.wait()
+
 scipy.io.wavfile.write("lab02/ex5.wav", fs, symphony)
 scipy.io.wavfile.read("lab02/ex5.wav")
 

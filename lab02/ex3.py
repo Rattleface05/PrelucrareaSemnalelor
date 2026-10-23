@@ -21,15 +21,22 @@ def sawtooth(x):
 def square(x): 
     return np.sign(np.sin(2 * np.pi * 300 * x))
 
-t = np.linspace(0,3,4800)
+t = np.linspace(0,3,3*fs)
 
 sd.play(a(t))
+sd.wait()
 
 sd.play(b(t))
+sd.wait()
+
 
 sd.play(sawtooth(t))
+sd.wait()
+
 
 sd.play(square(t))
+sd.wait()
+
 
 scipy.io.wavfile.write("lab02/ex3.wav", fs, square(t))
 scipy.io.wavfile.read("lab02/ex3.wav")

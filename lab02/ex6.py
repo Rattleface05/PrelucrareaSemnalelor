@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Frecventa de esantionare mentionata in ghid
-fs = 44100
+fs = 1100
 
 fig, axs = plt.subplots(3)
 
@@ -15,18 +15,18 @@ def b(x):
 def c(x):
     return np.sin(2 * np.pi * 0 * x)
 
-t = np.linspace(0,1,1000)
+t = np.linspace(0,1,fs)
 
 
 axs[0].plot(t,a(t))
 axs[0].set_ylabel("a)")
-axs[0].set_xlim([0,0.03])
+axs[0].set_xlim([0,0.3])
 axs[1].plot(t,b(t))
 axs[1].set_ylabel("b)")
-axs[1].set_xlim([0,0.03])
+axs[1].set_xlim([0,0.3])
 axs[2].plot(t,c(t) )
 axs[2].set_ylabel("c)")
-axs[2].set_xlim([0,0.03])
+axs[2].set_xlim([0,0.3])
 
 plt.xlabel("Timp (s)")
 plt.savefig("lab02/ex6.pdf")
