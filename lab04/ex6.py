@@ -33,9 +33,10 @@ plt.figure(figsize=(12, 6))
 
 plt.imshow(grupuri, aspect='auto', origin='lower', cmap='viridis', interpolation='nearest')
 
-plt.colorbar(label="Amplitudine (dB)")
-plt.xlabel("Timp (s)")
-plt.ylabel("Frecventa (kHz)")
+plt.colorbar(label="Amplitudine")
+plt.xlabel("Timp")
+plt.ylabel("Frecventa ")
 plt.suptitle("Ex 6")
 
+plt.savefig("lab04/ex6spectrograma.pdf")
 plt.show()
