@@ -62,7 +62,7 @@ ax.set_yscale("log") # log scale
 fig.set_figheight(6)
 fig.set_figwidth(6)
 
-ax.stem(N_valori, personal_fft_timp)
+ax.plot(N_valori, personal_fft_timp)
 ax.set_xlabel("N")
 ax.set_ylabel("Timp")
 
@@ -75,7 +75,7 @@ ax.set_yscale("log") # log scale
 fig.set_figheight(6)
 fig.set_figwidth(6)
 
-ax.stem(N_valori, numpy_fft_timp)
+ax.plot(N_valori, numpy_fft_timp)
 ax.set_xlabel("N")
 ax.set_ylabel("Timp")
 
