@@ -44,7 +44,8 @@ def updatefig1(frame):
     punct2.set_data([fourier(t).real[frame]], [fourier(t).imag[frame]])
     return (line1, line2, punct1, punct2)
 
-anim = anmt.FuncAnimation(fig=fig, func=updatefig1, frames=len(t), interval=1, blit=True, repeat=False)
+anim = anmt.FuncAnimation(fig=fig, func=updatefig1, frames=len(t), interval=40, blit=True, repeat=False)
+# anim.save("lab03/ex2anim1.gif", writer='ffmpeg', fps=60)
 plt.show()
 
 
@@ -87,5 +88,6 @@ def updatefig2(frame):
 
     return tuple(lines + points)
 
-anim = anmt.FuncAnimation(fig=fig, func=updatefig2, frames=len(t), interval=1, blit=True)
+anim = anmt.FuncAnimation(fig=fig, func=updatefig2, frames=len(t), interval=40, blit=True)
+#anim.save("lab03/ex2anim2.gif", writer='ffmpeg', fps=60)
 plt.show() 
